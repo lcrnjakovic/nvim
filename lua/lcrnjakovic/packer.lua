@@ -74,6 +74,14 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    'Pocco81/auto-save.nvim',
+    config = function()
+      require('auto-save').setup {
+      }
+    end
+  }
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
